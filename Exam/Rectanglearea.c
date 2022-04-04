@@ -1,20 +1,26 @@
 #include <stdio.h> 
 
 int width;          
-int height;         
-
-int area;           
-int perimeter;      
+int height;    
+int area;               
 
 int main() {
-	height = 7;
-	width = 5;
-
-    perimeter = 2*(height + width);
-	printf("Perimeter of the rectangle = %d cm\n", perimeter);
 	
-	area = height * width;
-	printf("Area of the rectangle = %d square cm\n", area);
+
+	printf("introce the value width\n");
+	scanf("%d", &width);
+	
+	printf("introce the value height\n");
+	scanf("%d", &height);
+
+	area = width * height;
+
+	printf("Area of the rectangle = %d area square cm\n", area);
+
+	if (width == height){
+		printf("la figura es un cuadrado");
+	};
+	
 
 return(0);
 }
